@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="stylesheet" href="./global.css" />
     <link href="./output.css" rel="stylesheet" />
+    <script defer src="./script.js"></script>
     <meta
       name="description"
       content="Simple weather app built with Tailwind CSS"
@@ -61,20 +62,20 @@
       </form>
     </div>
     <div class="px-6 mx-auto max-w-7xl md:px-8 pt-10">
-      <div class="flex items-center justify-between flex-col md:flex-row">
+      <div class="flex items-start justify-between flex-col md:flex-row gap-8">
         <div class="w-3/4">
           <img
             src="./images/bg-today-large.svg"
             alt="a background image"
             class="relative z-0 w-full"
           />
-          <div class="absolute z-10 transform bottom-23 w-[96%] max-w-4xl">
+          <div class="absolute z-10 transform bottom-25 w-[80%] max-w-4xl">
             <div class="flex items-center justify-between px-7">
               <div class="space-y-2">
                 <h4 class="text-white text-3xl font-medium">Berlin, Germany</h4>
                 <p class="text-gray-400 font-medium">Tuesday, Aug 5,2025</p>
               </div>
-              <div class="flex items-center">
+              <div class="flex items-center mr-5">
                 <img src="./images/icon-sunny.webp" class="w-26" />
                 <span class="text-white text-6xl font-semibold">30°C</span>
               </div>
@@ -112,7 +113,9 @@
             <p class="text-white pt-12 pb-4 font-normal text-2xl">
               Daily forecast
             </p>
-            <div class="grid lg:grid-cols-7 md:grid-cols-5 grid-cols-3 gap-3.5">
+            <div
+              class="grid lg:grid-cols-7 md:grid-cols-5 grid-cols-3 gap-3.5 pb-20"
+            >
               <div class="border border-[#343155] bg-[#25253F] rounded-xl py-4">
                 <p class="text-white text-center font-medium te">Tue</p>
                 <img src="./images/icon-sunny.webp" class="w-24 mx-auto" />
@@ -122,57 +125,171 @@
                 </div>
               </div>
               <div class="border border-[#343155] bg-[#25253F] rounded-xl py-4">
-                <p class="text-white text-center font-medium te">Tue</p>
-                <img src="./images/icon-sunny.webp" class="w-24 mx-auto" />
+                <p class="text-white text-center font-medium te">Wed</p>
+                <img src="./images/icon-rain.webp" class="w-24 mx-auto" />
                 <div class="flex items-center justify-between px-3">
-                  <p class="text-white">10°C</p>
+                  <p class="text-white">3°C</p>
+                  <p class="text-gray-400">5°C</p>
+                </div>
+              </div>
+              <div class="border border-[#343155] bg-[#25253F] rounded-xl py-4">
+                <p class="text-white text-center font-medium te">Thu</p>
+                <img src="./images/icon-drizzle.webp" class="w-24 mx-auto" />
+                <div class="flex items-center justify-between px-3">
+                  <p class="text-white">1°C</p>
+                  <p class="text-gray-400">44°C</p>
+                </div>
+              </div>
+              <div class="border border-[#343155] bg-[#25253F] rounded-xl py-4">
+                <p class="text-white text-center font-medium te">Fri</p>
+                <img src="./images/icon-fog.webp" class="w-24 mx-auto" />
+                <div class="flex items-center justify-between px-3">
+                  <p class="text-white">14°C</p>
+                  <p class="text-gray-400">2°C</p>
+                </div>
+              </div>
+              <div class="border border-[#343155] bg-[#25253F] rounded-xl py-4">
+                <p class="text-white text-center font-medium te">Sat</p>
+                <img src="./images/icon-overcast.webp" class="w-24 mx-auto" />
+                <div class="flex items-center justify-between px-3">
+                  <p class="text-white">0°C</p>
                   <p class="text-gray-400">20°C</p>
                 </div>
               </div>
               <div class="border border-[#343155] bg-[#25253F] rounded-xl py-4">
-                <p class="text-white text-center font-medium te">Tue</p>
-                <img src="./images/icon-sunny.webp" class="w-24 mx-auto" />
+                <p class="text-white text-center font-medium te">Sun</p>
+                <img
+                  src="./images/icon-partly-cloudy.webp"
+                  class="w-24 mx-auto"
+                />
                 <div class="flex items-center justify-between px-3">
-                  <p class="text-white">10°C</p>
-                  <p class="text-gray-400">20°C</p>
+                  <p class="text-white">13°C</p>
+                  <p class="text-gray-400">24°C</p>
                 </div>
               </div>
               <div class="border border-[#343155] bg-[#25253F] rounded-xl py-4">
-                <p class="text-white text-center font-medium te">Tue</p>
-                <img src="./images/icon-sunny.webp" class="w-24 mx-auto" />
+                <p class="text-white text-center font-medium te">Mon</p>
+                <img src="./images/icon-storm.webp" class="w-24 mx-auto" />
                 <div class="flex items-center justify-between px-3">
-                  <p class="text-white">10°C</p>
-                  <p class="text-gray-400">20°C</p>
-                </div>
-              </div>
-              <div class="border border-[#343155] bg-[#25253F] rounded-xl py-4">
-                <p class="text-white text-center font-medium te">Tue</p>
-                <img src="./images/icon-sunny.webp" class="w-24 mx-auto" />
-                <div class="flex items-center justify-between px-3">
-                  <p class="text-white">10°C</p>
-                  <p class="text-gray-400">20°C</p>
-                </div>
-              </div>
-              <div class="border border-[#343155] bg-[#25253F] rounded-xl py-4">
-                <p class="text-white text-center font-medium te">Tue</p>
-                <img src="./images/icon-sunny.webp" class="w-24 mx-auto" />
-                <div class="flex items-center justify-between px-3">
-                  <p class="text-white">10°C</p>
-                  <p class="text-gray-400">20°C</p>
-                </div>
-              </div>
-              <div class="border border-[#343155] bg-[#25253F] rounded-xl py-4">
-                <p class="text-white text-center font-medium te">Tue</p>
-                <img src="./images/icon-sunny.webp" class="w-24 mx-auto" />
-                <div class="flex items-center justify-between px-3">
-                  <p class="text-white">10°C</p>
-                  <p class="text-gray-400">20°C</p>
+                  <p class="text-white">12°C</p>
+                  <p class="text-gray-400">21°C</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="w-1/4"></div>
+        <div class="w-1/4">
+          <div class="bg-[#25253F] p-4 rounded-xl border border-[#343155]">
+            <div class="flex items-center justify-between pb-5">
+              <p class="text-white font-medium">Hourly forecast</p>
+              <div class="relative w-30">
+                <button
+                  id="dropdownBtn"
+                  class="flex items-center justify-between w-full px-3 py-2 text-sm text-white rounded-lg bg-[#3D3B5D] hover:bg-[#2F2F49] transition"
+                >
+                  <span id="selectedDay">Tuesday</span>
+                  <svg
+                    class="w-4 h-4 ml-2 transition-transform"
+                    id="arrow"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <ul
+                  id="dropdownMenu"
+                  class="absolute left-0 z-10 hidden w-full mt-2 overflow-hidden text-sm text-white rounded-lg shadow-lg bg-[#25253F]"
+                >
+                  <li class="px-3 py-2 cursor-pointer hover:bg-[#2F2F49]">
+                    Monday
+                  </li>
+                  <li class="px-3 py-2 cursor-pointer hover:bg-[#2F2F49]">
+                    Tuesday
+                  </li>
+                  <li class="px-3 py-2 cursor-pointer hover:bg-[#2F2F49]">
+                    Wednesday
+                  </li>
+                  <li class="px-3 py-2 cursor-pointer hover:bg-[#2F2F49]">
+                    Thursday
+                  </li>
+                  <li class="px-3 py-2 cursor-pointer hover:bg-[#2F2F49]">
+                    Friday
+                  </li>
+                  <li class="px-3 py-2 cursor-pointer hover:bg-[#2F2F49]">
+                    Saturday
+                  </li>
+                  <li class="px-3 py-2 cursor-pointer hover:bg-[#2F2F49]">
+                    Sunday
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overflow-y-scroll h-159 no-scrollbar">
+              <div
+                class="bg-[#302F49] flex items-center justify-between border border-[#433f6e] rounded-md p-2.5"
+              >
+                <div class="flex items-center gap-2">
+                  <img src="./images/icon-storm.webp" class="w-8" />
+                  <span class="text-white">1 PM</span>
+                </div>
+                <div>
+                  <span class="text-white">10°C</span>
+                </div>
+              </div>
+              <div
+                class="bg-[#302F49] flex items-center justify-between border border-[#433f6e] mt-4 rounded-md p-2.5"
+              >
+                <div class="flex items-center gap-2">
+                  <img src="./images/icon-overcast.webp" class="w-8" />
+                  <span class="text-white">2 PM</span>
+                </div>
+                <div>
+                  <span class="text-white">12°C</span>
+                </div>
+              </div>
+              <div
+                class="bg-[#302F49] flex items-center justify-between border border-[#433f6e] mt-4 rounded-md p-2.5"
+              >
+                <div class="flex items-center gap-2">
+                  <img src="./images/icon-sunny.webp" class="w-8" />
+                  <span class="text-white">3 PM</span>
+                </div>
+                <div>
+                  <span class="text-white">11°C</span>
+                </div>
+              </div>
+              <div
+                class="bg-[#302F49] flex items-center justify-between border border-[#433f6e] mt-4 rounded-md p-2.5"
+              >
+                <div class="flex items-center gap-2">
+                  <img src="./images/icon-snow.webp" class="w-8" />
+                  <span class="text-white">4 PM</span>
+                </div>
+                <div>
+                  <span class="text-white">15°C</span>
+                </div>
+              </div>
+              <div
+                class="bg-[#302F49] flex items-center justify-between border border-[#433f6e] mt-4 rounded-md p-2.5"
+              >
+                <div class="flex items-center gap-2">
+                  <img src="./images/icon-rain.webp" class="w-8" />
+                  <span class="text-white">5 PM</span>
+                </div>
+                <div>
+                  <span class="text-white">40°C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
