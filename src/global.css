@@ -13,19 +13,3 @@
   font-weight: 100 900;
   font-style: italic;
 }
-
-@font-face {
-  font-family: "Bricolage Grotesque";
-  src: url("../src/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf")
-    format("ttf");
-  font-weight: 100 900;
-  font-style: normal;
-}
-
-* {
-  font-family: DM Sans, sans-serif;
-}
-
-.bricolage {
-  font-family: "Bricolage Grotesque", sans-serif;
-}
